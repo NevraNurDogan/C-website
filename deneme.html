@@ -1,0 +1,138 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .col-1{
+        width: 8.33%;
+      }
+      .col-4{
+        width: 33.32%;
+      }
+      .col-6{
+        width: 50%;
+      }
+      .col-12{
+        width: 100%;
+      }
+      .container {
+      display: flex;
+    }
+    .image-container {
+      display: flex;
+      justify-content: center; /* Resmi yatayda ortalar */
+      align-items: center; /* Resmi dikeyde ortalar */
+    }
+      header {
+        background-color: rgb(236, 177, 177);
+        width: 100%;
+        height:10vh;
+        position: relative;
+        margin-left: 0px;
+        margin-top: 0px;
+      }
+      article, aside {
+      background-color: rgb(216, 184, 184);
+      position: relative;
+      height: 900px;/*değişecek*/
+      color: rgb(213, 36, 36);
+      float: left;
+    }
+    aside {
+    
+      height: 900px;
+    }
+    article {
+      padding-left: 10%;
+      background-color:white
+    }
+      /*footer {
+        background-color: rgb(216, 184, 184);
+        color: rgb(0, 0, 0);
+      
+      }*/
+  
+      .sticky-box {
+    height: 100%; /* Sayfanın yarısına kadar uzatmak için yükseklik 100% */
+    position: sticky;
+    top: 0; /* Kutunun sayfanın başlangıcında yapışık olmasını sağlar */
+  }
+
+  .sticky-box img {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30%;
+    border-radius: 25px;
+    /* Resmi ortalamak için */
+
+  }
+  * {
+    color: black;
+    font-family:'Times New Roman', Times, serif;
+  }
+  h1 {
+     font-size: 50px;
+     line-height: 0.8;
+     
+  }
+  h3 {
+    line-height: 0.01;
+  }
+ .menü{
+  float: right;
+  }
+  @media (max-width: 768px) {
+  h1 {
+    font-size: 30px; /* Küçük ekranlarda başlık font boyutunu küçültün */
+  }
+}
+@media (max-width: 768px) {
+  list {
+    display: block;
+  }
+}
+  
+    </style>
+  </head>
+  <body>
+ 
+    <header class="col-12"></header>
+    
+    <article class="col-6">
+   <list class="menü ">
+      <ul class="menü">Hakkımda </ul>
+      <ul class="menü">Özgeçmiş</ul>
+      <ul class="menü">İletişim</ul>
+  </list>
+  <br><br><br><br>
+      <h1>Nevra Nur Doğan</h1>
+      <h3>Yazılım Mühendisi</h2>
+        <list>
+          <ul>Telefon (+90) 212 234 56 78</ul>
+          <ul>E-posta bilgi@sitem.com</ul>
+          <ul>Adres Sarıyer, İstanbul</ul>
+        </list>
+
+<list>
+  <ul class="menü">•LinkedIn </ul>
+  <ul class="menü">•Facebook</ul>
+  <ul class="menü">•Twitter</ul>
+</list>
+
+
+    </article>
+    <div class="sticky-box">
+      <aside class="col-6">
+      <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="" width="200px" height="200px">
+    
+    </aside> 
+  </div>
+    <footer class="col-4"> her hakkı gizlidir</footer>
+  </body>
+  </html>
